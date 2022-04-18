@@ -1,0 +1,221 @@
+Sz-N-Ani-And-M
+
+1
+Megettem egy almát mert éhes voltam
+F: magattomagy almat metéhe sovoltan
+N: aremtev egy albát mezkéhezso voltom
+
+megettem egy almát mert éhes voltam
+-
+Megettem egy almát, mert éhes voltam.
+Megettem egy almát mert éhes voltam
+Megettem egy almát, mert éhes voltam.
+
+2
+Tanulnom kell a szerdán lévő vizsgámra
+F: tavólom ál a szebbel vévű isgemranni
+N: tanolnom kála aszerdál lébül ésmábol
+
+tanulnom kell a szerdán vett témából
+tanulnom kell szerrdára...
+Tanulnom kell a szerdai vizsgámra.
+Tanulnom kell a szerdai vizsgára
+Tanulnom kell a ...
+
+3
+A modell betanítása rendkívül nehéz volt
+F: a bodál betaitása  vent tívül lehéz volt
+N: a odelbezalítá asap fen kimüllehéz olt
+
+a modell betanítás rendkívül nehéz volt
+-
+A szöveg betanítása rendkívül nehéz volt.
+A model betanítása rendkívül nehéz volt
+Az oda beszállítás rendkívül nehéz volt.
+
+4
+Elmegyek megsétáltatni a kutyámat és szívok egy kis friss levegőt
+F: elmagyek megsételtott nia kucsába tott és sziróbet kis hislelegőtu
+N: emegyék megsétáta nyi ak kösávan és szí ong egy kisukéslevedünt
+
+elmegyek sétálni a kocsmába és szívok egy kis friss levegőt
+elmegyek megsétáltatni a nyílt kősávon...
+Elmegyek megsétáltatni a kutyát és szívok egy kis friss levegőt.
+Elmegyek megsétáltatni a ... és szívok egy kis levegőt
+Elmegyek megsétáltatni a kiskutyát.
+
+5
+Szabadidőmben szívesen játszok a számítógépen
+F: szabadidőmben széveséhátzokazamítógépen
+N: szavlidőnben sívásályjászok a szamító géban
+
+szabadidőmben szívesen játszok a számítógépen
+Szabadidőmben szívesen játszok a számítógépen
+Szabadidőmben szívesen játszok a számítógépen.
+Szabadidőmben szívesen játszok a számítógépen 
+Szabadidőmben szívesen játszok a számítógépen.
+
+6
+Tavasszal utaztunk először külföldre
+F: tavatszaludasztónk előszertül fölül
+N: tavaszakotasztók előszer külfölde
+
+tavasszal utazunk először külföldre
+tavasszal utazok elősször küldöldre
+Tavasszal utaztunk először külföldre.
+Tavasszal utaztunk először külföldre 
+Tavasszal elutazok először külföldre.
+
+7
+A kék farmerhez fehért felsőt és fekete kabátot szeretnék felvenni
+F: a bék varmá hezefanyőnfelesüld és meketekabátótcelatnék felőönmén
+N: a kik varmárez fejévelsőd és lekete kavátont szeretlék lelelli
+
+a kék farmerhez egy fekete kabátot szeretnék felvenni
+-
+A kék farmerhez fehér felsőt és fekete kabátot szeretnék felvenni.
+A kék ... felsőt és fekete kabátot szeretném felvenni 
+Fehér felsőt és fekete kabátot szeretnék felvenni.
+
+8
+Ma négyig dolgozom de utána találkozhatunk
+F: madégyig dolkozo bótál takozhatómk
+N: a négyig dolgozom tótánatalákoszhatónk
+
+négyig dolgozom utána találkozhatunk
+Ma négyig dolgozom, utánna találkozhatunk
+Ma négyig dolgozom utána találkozhatunk.
+Ma négyig dolgozok, utána találkozhatnánk
+Négyig dolgozom utána találkozhatunk.
+
+9
+Nagyon szeretnénk egy kis kutyát tartani
+F: agyon zeletlényké kis kucysáttaltak mr
+N: nagyon szeretnék egy kiskutyátartani
+
+nagyon szeretnék egy kiskutyát tartani
+Nagyon szeretnék egy kiskutyát tartani
+Nagyon szeretnék egy kiskutyát tartani.
+Nagyon szeretnék egy kiskutyát már
+Nagyon szeretnék egy kiskutyát tartani.
+
+10
+Általában csütörtökön járok ki a haverokkal inni
+F: általában külöltöken jerom ja havarokkalimni
+N: átolában csiterteköniáro kér averomkal inli
+
+általában csütörtökön járok a haverokkal inni
+Általában csütörtökönként járok haverokkal inni.
+Általában csütörtökönként járok a haverokkal inni.
+Általában csütörtökön járok a haverokkal inni
+Általában külön utakon járunk a haverokkal.
+
+11
+Szeretném ha erkély is tartozna a lakáshoz
+F: szeletlén a harkéis tartóznalakáshozbk
+N: szetném ha erké és tartoznalakácsoloz
+
+szeretném ha erkély is tartozna a lakáshoz
+szeretném ha tartanád ezt a kalácsot???
+Szeretném, ha erkély is tartozna a lakáshoz.
+Szeretném ha erkély is tartozna a lakáshoz
+Szeretném ha erkély is tartozna a lakáshoz.
+
+12
+Remélem hamarosan a diplomával díszeleghetek
+F: revélem havarasaldi plomábal bizleketek
+N: hemélem  alarosal adipmomáladi szelethetek
+
+remélem hamarosan diplomát szerezhetek
+Remélem hamarosan diplomát szerezhetek.
+Remélem hamarosan diplomával büszkélkedhetek.
+Remélem hamarosan diplomás lehetek 
+Remélem hamarosan lediplomázok.
+
+13
+A szomszédom tehetségesen utánoz egy galambot éneklés közben
+F: a szomszélottáhetségesen utánoz agy galanbopileplisközeben
+N: a szonszélonteségesen utánoz régolambond éleklés gözban
+
+a szomszéd tehetségesen utánoz egy galambot éneklés közben
+A szomszéd tehetségesen utánoz rémálom éneklés közben
+A szomszédom tehetségesen utánoz galambot éneklés közben
+A szomszéd tehetségesen utánoz egy galambot éneklés közben
+A szomszédom utánoz éneklés közben
+
+14
+Szívesen megtanulnék tortát sütni és egyedül befalni
+F: szévesen megtadu légtoltá sükni és egyedünbefalnitak
+N: szilesen megtalurnét tóntátsog vé és kegyedübe mani
+
+szívesen megtanulnék tortát sütni és egyedül befalni
+Szívesen megtanulnék sütni
+Szívesen megtanulnék tortát sütni és egyedül befalni
+Szívesen megtanulnék tortát sütni és egyedül befalni
+Szívesen megtanulnék tortát sütni és egyedül befalni
+
+15
+Hosszasan vártam a megállóban mert késve érkezett a villamos
+F: osszasan váltama megálló ban meg késlelyekezett a villamosonk
+N: a szesan vártam amegállóban megy késmegérkezett avillamos
+
+hosszasan vártam a megállóban mire megérkezett a villamosom
+Hosszasan vártam a buszmegállóban, megérkezett a villamos
+Sokat vártam a megállóban mire megérkezett a villamos
+Hosszasan vártam a megállóban mert késve érkezett a villamosunk
+... vártam a megállóban és késve megérkezett a villamos
+
+16
+A nagy takarítás előtt még el kell mennem a boltba
+F: a naystakaritásalött még álkál men nama boldva
+N: a negytakaritás elettúmég elkemelnem a boltba
+
+nagytakarítás előtt még elkell mennem a boltba
+A nagytakarítás előtt még el kell mennem a boltba
+Nagytakarítás előtt még el kellett mennem boltba
+A nagytakarítás előtt még el kell mennem a boltba
+A nagytakarítás előtt még el kell mennem a boltba.
+
+17
+Mindig kikötődik a cipőfűzőm az egyik lábamon
+F: mindik kitötüdikacípő füzőn az egyik lábón
+N: vmindig kiketőrdik a cipülfirzen az egyik lábamom
+
+mindjárt kikötődik a cipőfűző az egyik lábamon
+Mindig kikötődik a cipőfűző az egyik lábamon
+Mindig kikötődik a cipőm az egyik lábamon
+Mindig kikötődik a cipőfűző az egyik lábamon
+Mindig kikötődik a cipőfűzöm az egyik lábamon
+
+18
+Nem tudom mennyi mindent csomagoljak el az útra
+F: lem tudom megnyiminden csonabola kal azóta
+N: em tudom megnyi minden csolakol jak el az ódra
+
+nem tudom mennyi minden
+Nem tudom menni mindent csomagoljak el az útra
+Nem tudom mennyi mindent csomagoljak el az útra
+Nem tudom mennyi minden ....
+Nem tudom mennyi mindent csomagoljak az útra.
+
+19
+A weboldalra feltöltött képeknek jó minőségűnek kell lennie
+F: a veboldolrak feltöltött képet neg jobmiősibülekellannia
+N: a vepoldara feltőltöt kéteklekjó midősígületellemlée
+
+a weboldalakra feltöltött képeknek jobb minőségünek kell lennie
+a weboldalra feltöltött...
+A weboldalra feltöltött képnek jó minőségűnek kell lennie.
+A weboldalra feltöltött képeknek jobb minőségűeknek kell lennie
+A weoboldalra feltöltött képek jó minőségűek.
+
+20
+Sikerült időpontot foglalnom a fodrászomhoz
+F: sikelült időpontott foglalamafordlálszan oz
+N: siterült idő purtott foglallam a fodrászanoz
+
+sikerült időpontot foglalnom  a fodrászszalonhoz
+Sikerült időpontot foglalnom a fodrászhoz
+Sikerült időpontot foglalnom a fodrászhoz
+Sikerült időpontot foglalnom a fodrászomhoz
+Sikerült időpontot foglalnom a fodrásznál
