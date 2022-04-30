@@ -1,0 +1,83 @@
+Test on shared/test.csv - WER: 0.797104, CER: 0.255910, loss: 40.760906
+--------------------------------------------------------------------------------
+Best WER:
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.000000, loss: 4.293132
+ - wav: file://shared/common_voice_hu_25519461.wav
+ - src: "a hivatalos nyelvek a német és az alnémet"
+ - res: "a hivatalos nyelvek a német és az alnémet"
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.000000, loss: 4.035627
+ - wav: file://shared/common_voice_hu_23824807.wav
+ - src: "hátha cserélnénk"
+ - res: "hátha cserélnénk"
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.071429, loss: 3.902697
+ - wav: file://shared/common_voice_hu_23674428.wav
+ - src: "széles kalapot"
+ - res: "széles kalapot "
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.000000, loss: 2.360541
+ - wav: file://shared/common_voice_hu_23689673.wav
+ - src: "megütöttél"
+ - res: "megütöttél"
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.000000, loss: 1.238604
+ - wav: file://shared/common_voice_hu_23744066.wav
+ - src: "de nem megy"
+ - res: "de nem megy"
+--------------------------------------------------------------------------------
+Median WER:
+--------------------------------------------------------------------------------
+WER: 0.833333, CER: 0.229167, loss: 33.633633
+ - wav: file://shared/common_voice_hu_25663156.wav
+ - src: "a fázisok azonban kölcsönösen függenek egymástól"
+ - res: " pázisrokazonban kölcsene selfüggelk egymástól"
+--------------------------------------------------------------------------------
+WER: 0.833333, CER: 0.382353, loss: 32.352535
+ - wav: file://shared/common_voice_hu_23790756.wav
+ - src: "jövőm sötét nem látlak benne téged"
+ - res: "yöpömb setént nem letlakben natégeta"
+--------------------------------------------------------------------------------
+WER: 0.833333, CER: 0.137931, loss: 29.495985
+ - wav: file://shared/common_voice_hu_25537336.wav
+ - src: "ezen sorozat összegképletét többféleképpen is megkaphatjuk"
+ - res: "ezel sorozat összek képpletét tökféleképpen is megkapatuk"
+--------------------------------------------------------------------------------
+WER: 0.833333, CER: 0.225000, loss: 29.475445
+ - wav: file://shared/common_voice_hu_25085092.wav
+ - src: "a faj aktív védelemben részesül japánban"
+ - res: "a fai ak tévédelember észesüljavánban"
+--------------------------------------------------------------------------------
+WER: 0.833333, CER: 0.260870, loss: 29.029118
+ - wav: file://shared/common_voice_hu_25030890.wav
+ - src: "keresztúr egészen a török hódoltságig fennállt"
+ - res: "keresturi egészen atörö ordotságék fenmált"
+--------------------------------------------------------------------------------
+Worst WER:
+--------------------------------------------------------------------------------
+WER: 1.500000, CER: 0.200000, loss: 9.933245
+ - wav: file://shared/common_voice_hu_23796795.wav
+ - src: "előkelő származásúak"
+ - res: "elők elő szárvezásúalk"
+--------------------------------------------------------------------------------
+WER: 1.500000, CER: 0.166667, loss: 5.558619
+ - wav: file://shared/common_voice_hu_23387855.wav
+ - src: "ugyan kérlek"
+ - res: "úgyan kér lek"
+--------------------------------------------------------------------------------
+WER: 1.500000, CER: 0.272727, loss: 5.350580
+ - wav: file://shared/common_voice_hu_23637780.wav
+ - src: "nekem semmi"
+ - res: "nekel sá mi"
+--------------------------------------------------------------------------------
+WER: 1.750000, CER: 0.227273, loss: 28.844313
+ - wav: file://shared/common_voice_hu_25347506.wav
+ - src: "lajos megbízottjaként portugáliában szolgált"
+ - res: "tajos megbízottja k ent portuk áliában falgát"
+--------------------------------------------------------------------------------
+WER: 2.000000, CER: 0.333333, loss: 6.472826
+ - wav: file://shared/common_voice_hu_23689653.wav
+ - src: "beszállsz"
+ - res: "ba szálsz"
+--------------------------------------------------------------------------------

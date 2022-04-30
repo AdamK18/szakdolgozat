@@ -1,0 +1,48 @@
+ /*SITE SPECIFIC CSS*/
+
+.featurePanel {
+	background-color: #00573D;
+}
+.navbar {
+	background-color: #004430;
+}
+.featurePanel .featurePanelInner {
+	background-color: #004430;
+}
+.featurePanel p {
+	color: #f6f6f6 !important;
+}
+.featurePanel h3 {
+	color: #f6f6f6 !important;
+}
+.featurePanel a {
+	color: #f6f6f6 !important;
+}
+.featurePanel a:hover {
+	color: #f6f6f6 !important;
+}
+.journal-bg {
+	background-color: #00573D;
+}
+.journal-header .journal-logo {
+	width: 240px;
+}
+.journal-header .society-logo {
+	width: 180px
+}
+img.journal-footer-affiliations-logo {
+	width: 100px;
+}
+
+#cloudCMS .panels .widget-dynamic-title::after, #cloudCMS .panels .widgetHead h3::after, #cloudCMS .rowHead h3::after{
+	background-color: #00573D;
+}
+#cloudCMS .row:nth-child(4):not(.relatedJournals) {
+	background-color: #A29062;
+}
+#cloudCMS .row:nth-child(4):not(.relatedJournals) .rowHead h3 {
+	color: #ffffff;
+}
+#cloudCMS .row:nth-child(4):not(.relatedJournals) .rowHead h3::after {
+	background-color: #ffffff;
+}

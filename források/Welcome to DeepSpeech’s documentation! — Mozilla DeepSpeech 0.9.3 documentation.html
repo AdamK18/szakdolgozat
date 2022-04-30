@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://deepspeech.readthedocs.io/en/r0.9/ -->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" lang="en" style=""><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Welcome to DeepSpeech’s documentation! — Mozilla DeepSpeech 0.9.3 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" async="" src="./Welcome to DeepSpeech’s documentation! — Mozilla DeepSpeech 0.9.3 documentation_files/analytics.js.letöltés"></script><script type="text/javascript" src="./Welcome to DeepSpeech’s documentation! — Mozilla DeepSpeech 0.9.3 documentation_files/modernizr.min.js.letöltés"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="./Welcome to DeepSpeech’s documentation! — Mozilla DeepSpeech 0.9.3 documentation_files/documentation_options.js.letöltés"></script>
+        <script src="./Welcome to DeepSpeech’s documentation! — Mozilla DeepSpeech 0.9.3 documentation_files/jquery.js.letöltés"></script>
+        <script src="./Welcome to DeepSpeech’s documentation! — Mozilla DeepSpeech 0.9.3 documentation_files/underscore.js.letöltés"></script>
+        <script src="./Welcome to DeepSpeech’s documentation! — Mozilla DeepSpeech 0.9.3 documentation_files/doctools.js.letöltés"></script>
+        <script src="./Welcome to DeepSpeech’s documentation! — Mozilla DeepSpeech 0.9.3 documentation_files/language_data.js.letöltés"></script>
+        <script async="async" src="./Welcome to DeepSpeech’s documentation! — Mozilla DeepSpeech 0.9.3 documentation_files/latest.js.letöltés"></script>
+        <script async="async" src="./Welcome to DeepSpeech’s documentation! — Mozilla DeepSpeech 0.9.3 documentation_files/readthedocs-doc-embed.js.letöltés"></script>
+    
+    <script type="text/javascript" src="./Welcome to DeepSpeech’s documentation! — Mozilla DeepSpeech 0.9.3 documentation_files/theme.js.letöltés"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="./Welcome to DeepSpeech’s documentation! — Mozilla DeepSpeech 0.9.3 documentation_files/theme.css" type="text/css">
+  <link rel="stylesheet" href="./Welcome to DeepSpeech’s documentation! — Mozilla DeepSpeech 0.9.3 documentation_files/pygments.css" type="text/css">
+    <link rel="index" title="Index" href="https://deepspeech.readthedocs.io/en/r0.9/genindex.html">
+    <link rel="search" title="Search" href="https://deepspeech.readthedocs.io/en/r0.9/search.html">
+    <link rel="next" title="Using a Pre-trained Model" href="https://deepspeech.readthedocs.io/en/r0.9/USING.html"> 
+
+<!-- RTD Extra Head -->
+
+<link rel="stylesheet" href="./Welcome to DeepSpeech’s documentation! — Mozilla DeepSpeech 0.9.3 documentation_files/readthedocs-doc-embed.css" type="text/css">
+
+<script type="application/json" id="READTHEDOCS_DATA">{"ad_free": false, "api_host": "https://readthedocs.org", "build_date": "2021-07-30T19:02:15Z", "builder": "sphinx", "canonical_url": null, "commit": "bfccca32", "docroot": "/doc/", "features": {"docsearch_disabled": false}, "global_analytics_code": "UA-17997319-1", "language": "en", "page": "index", "programming_language": "py", "project": "deepspeech", "proxied_api_host": "/_", "source_suffix": ".rst", "subprojects": {}, "theme": "sphinx_rtd_theme", "user_analytics_code": "", "version": "r0.9"}</script>
+
+<!--
+Using this variable directly instead of using `JSON.parse` is deprecated.
+The READTHEDOCS_DATA global variable will be removed in the future.
+-->
+<script type="text/javascript">
+READTHEDOCS_DATA = JSON.parse(document.getElementById('READTHEDOCS_DATA').innerHTML);
+</script>
+
+<script type="text/javascript" src="./Welcome to DeepSpeech’s documentation! — Mozilla DeepSpeech 0.9.3 documentation_files/readthedocs-analytics.js.letöltés" async="async"></script>
+
+<!-- end RTD <extrahead> -->
+<script src="./Welcome to DeepSpeech’s documentation! — Mozilla DeepSpeech 0.9.3 documentation_files/ethicalads.min.js.letöltés" type="text/javascript" async="" id="ethicaladsjs"></script><script src="./Welcome to DeepSpeech’s documentation! — Mozilla DeepSpeech 0.9.3 documentation_files/js" type="text/javascript" async=""></script><style>[data-ea-publisher].loaded,[data-ea-type].loaded{font-size:14px;font-family:-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;font-weight:normal;font-style:normal;leter-spacing:0px;vertical-align:baseline;line-height:1.3em}[data-ea-publisher].loaded a,[data-ea-type].loaded a{text-decoration:none}[data-ea-publisher].loaded .ea-pixel,[data-ea-type].loaded .ea-pixel{display:none}[data-ea-publisher].loaded .ea-content,[data-ea-type].loaded .ea-content{margin:1em 1em 0.5em 1em;padding:1em;background:rgba(0,0,0,0.03);color:#505050}[data-ea-publisher].loaded .ea-content a:link,[data-ea-type].loaded .ea-content a:link{color:#505050}[data-ea-publisher].loaded .ea-content a:visited,[data-ea-type].loaded .ea-content a:visited{color:#505050}[data-ea-publisher].loaded .ea-content a:hover,[data-ea-type].loaded .ea-content a:hover{color:#373737}[data-ea-publisher].loaded .ea-content a:active,[data-ea-type].loaded .ea-content a:active{color:#373737}[data-ea-publisher].loaded .ea-content a strong,[data-ea-publisher].loaded .ea-content a b,[data-ea-type].loaded .ea-content a strong,[data-ea-type].loaded .ea-content a b{color:#088cdb}[data-ea-publisher].loaded .ea-callout a:link,[data-ea-type].loaded .ea-callout a:link{color:#6a6a6a}[data-ea-publisher].loaded .ea-callout a:visited,[data-ea-type].loaded .ea-callout a:visited{color:#6a6a6a}[data-ea-publisher].loaded .ea-callout a:hover,[data-ea-type].loaded .ea-callout a:hover{color:#505050}[data-ea-publisher].loaded .ea-callout a:active,[data-ea-type].loaded .ea-callout a:active{color:#505050}[data-ea-publisher].loaded .ea-callout a strong,[data-ea-publisher].loaded .ea-callout a b,[data-ea-type].loaded .ea-callout a strong,[data-ea-type].loaded .ea-callout a b{color:#088cdb}[data-ea-publisher].loaded .ea-callout a,[data-ea-type].loaded .ea-callout a{font-size:0.8em}[data-ea-publisher].loaded.dark .ea-content,[data-ea-type].loaded.dark .ea-content{background:rgba(255,255,255,0.05);color:#dcdcdc}[data-ea-publisher].loaded.dark .ea-content a:link,[data-ea-type].loaded.dark .ea-content a:link{color:#dcdcdc}[data-ea-publisher].loaded.dark .ea-content a:visited,[data-ea-type].loaded.dark .ea-content a:visited{color:#dcdcdc}[data-ea-publisher].loaded.dark .ea-content a:hover,[data-ea-type].loaded.dark .ea-content a:hover{color:#f6f6f6}[data-ea-publisher].loaded.dark .ea-content a:active,[data-ea-type].loaded.dark .ea-content a:active{color:#f6f6f6}[data-ea-publisher].loaded.dark .ea-content a strong,[data-ea-publisher].loaded.dark .ea-content a b,[data-ea-type].loaded.dark .ea-content a strong,[data-ea-type].loaded.dark .ea-content a b{color:#50baf9}[data-ea-publisher].loaded.dark .ea-callout a:link,[data-ea-type].loaded.dark .ea-callout a:link{color:#c3c3c3}[data-ea-publisher].loaded.dark .ea-callout a:visited,[data-ea-type].loaded.dark .ea-callout a:visited{color:#c3c3c3}[data-ea-publisher].loaded.dark .ea-callout a:hover,[data-ea-type].loaded.dark .ea-callout a:hover{color:#dcdcdc}[data-ea-publisher].loaded.dark .ea-callout a:active,[data-ea-type].loaded.dark .ea-callout a:active{color:#dcdcdc}[data-ea-publisher].loaded.dark .ea-callout a strong,[data-ea-publisher].loaded.dark .ea-callout a b,[data-ea-type].loaded.dark .ea-callout a strong,[data-ea-type].loaded.dark .ea-callout a b{color:#50baf9}@media (prefers-color-scheme: dark){[data-ea-publisher].loaded.adaptive .ea-content,[data-ea-type].loaded.adaptive .ea-content{background:rgba(255,255,255,0.05);color:#dcdcdc}[data-ea-publisher].loaded.adaptive .ea-content a:link,[data-ea-type].loaded.adaptive .ea-content a:link{color:#dcdcdc}[data-ea-publisher].loaded.adaptive .ea-content a:visited,[data-ea-type].loaded.adaptive .ea-content a:visited{color:#dcdcdc}[data-ea-publisher].loaded.adaptive .ea-content a:hover,[data-ea-type].loaded.adaptive .ea-content a:hover{color:#f6f6f6}[data-ea-publisher].loaded.adaptive .ea-content a:active,[data-ea-type].loaded.adaptive .ea-content a:active{color:#f6f6f6}[data-ea-publisher].loaded.adaptive .ea-content a strong,[data-ea-publisher].loaded.adaptive .ea-content a b,[data-ea-type].loaded.adaptive .ea-content a strong,[data-ea-type].loaded.adaptive .ea-content a b{color:#50baf9}[data-ea-publisher].loaded.adaptive .ea-callout a:link,[data-ea-type].loaded.adaptive .ea-callout a:link{color:#c3c3c3}[data-ea-publisher].loaded.adaptive .ea-callout a:visited,[data-ea-type].loaded.adaptive .ea-callout a:visited{color:#c3c3c3}[data-ea-publisher].loaded.adaptive .ea-callout a:hover,[data-ea-type].loaded.adaptive .ea-callout a:hover{color:#dcdcdc}[data-ea-publisher].loaded.adaptive .ea-callout a:active,[data-ea-type].loaded.adaptive .ea-callout a:active{color:#dcdcdc}[data-ea-publisher].loaded.adaptive .ea-callout a strong,[data-ea-publisher].loaded.adaptive .ea-callout a b,[data-ea-type].loaded.adaptive .ea-callout a strong,[data-ea-type].loaded.adaptive .ea-callout a b{color:#50baf9}}[data-ea-publisher].loaded .ea-content,[data-ea-type].loaded .ea-content{border:0px;border-radius:3px;box-shadow:0px 2px 3px rgba(0,0,0,0.15)}[data-ea-publisher].loaded.raised .ea-content,[data-ea-type].loaded.raised .ea-content{border:0px;border-radius:3px;box-shadow:0px 2px 3px rgba(0,0,0,0.15)}[data-ea-publisher].loaded.bordered .ea-content,[data-ea-type].loaded.bordered .ea-content{border:1px solid rgba(0,0,0,0.04);border-radius:3px;box-shadow:none}[data-ea-publisher].loaded.bordered.dark .ea-content,[data-ea-type].loaded.bordered.dark .ea-content{border:1px solid rgba(255,255,255,0.07)}@media (prefers-color-scheme: dark){[data-ea-publisher].loaded.bordered.adaptive .ea-content,[data-ea-type].loaded.bordered.adaptive .ea-content{border:1px solid rgba(255,255,255,0.07)}}[data-ea-publisher].loaded.flat .ea-content,[data-ea-type].loaded.flat .ea-content{border:0px;border-radius:3px;box-shadow:none}[data-ea-type="image"].loaded,[data-ea-publisher]:not([data-ea-type]).loaded,.ea-type-image{display:inline-block}[data-ea-type="image"].loaded .ea-content,[data-ea-publisher]:not([data-ea-type]).loaded .ea-content,.ea-type-image .ea-content{max-width:180px;overflow:auto;text-align:center}[data-ea-type="image"].loaded .ea-content>a>img,[data-ea-publisher]:not([data-ea-type]).loaded .ea-content>a>img,.ea-type-image .ea-content>a>img{width:120px;height:90px;display:inline-block}[data-ea-type="image"].loaded .ea-content>.ea-text,[data-ea-publisher]:not([data-ea-type]).loaded .ea-content>.ea-text,.ea-type-image .ea-content>.ea-text{margin-top:1em;font-size:1em;text-align:center}[data-ea-type="image"].loaded .ea-callout,[data-ea-publisher]:not([data-ea-type]).loaded .ea-callout,.ea-type-image .ea-callout{max-width:180px;margin:0em 1em 1em 1em;padding-left:1em;padding-right:1em;font-style:italic;text-align:right}[data-ea-type="image"].loaded.horizontal .ea-content,[data-ea-publisher]:not([data-ea-type]).loaded.horizontal .ea-content,.ea-type-image.horizontal .ea-content{max-width:320px}[data-ea-type="image"].loaded.horizontal .ea-content>a>img,[data-ea-publisher]:not([data-ea-type]).loaded.horizontal .ea-content>a>img,.ea-type-image.horizontal .ea-content>a>img{float:left;margin-right:1em}[data-ea-type="image"].loaded.horizontal .ea-content .ea-text,[data-ea-publisher]:not([data-ea-type]).loaded.horizontal .ea-content .ea-text,.ea-type-image.horizontal .ea-content .ea-text{margin-top:0em;text-align:left;overflow:auto}[data-ea-type="image"].loaded.horizontal .ea-callout,[data-ea-publisher]:not([data-ea-type]).loaded.horizontal .ea-callout,.ea-type-image.horizontal .ea-callout{max-width:320px;text-align:right}[data-ea-type="text"].loaded,.ea-type-text{font-size:14px}[data-ea-type="text"].loaded .ea-content,.ea-type-text .ea-content{text-align:left}[data-ea-type="text"].loaded .ea-callout,.ea-type-text .ea-callout{margin:0.5em 1em 1em 1em;padding-left:1em;padding-right:1em;text-align:right;font-style:italic}[data-ea-style="stickybox"].loaded .ea-type-image{z-index:10;position:fixed;bottom:20px;right:20px}[data-ea-style="stickybox"].loaded .ea-type-image .ea-stickybox-hide{cursor:pointer;position:absolute;top:0.75em;right:0.75em;background-color:#fefefe;border:1px solid #088cdb;border-radius:50%;color:#088cdb;font-size:1em;text-align:center;height:1.5em;width:1.5em;line-height:1.5em}@media (max-width: 1300px){[data-ea-style="stickybox"].loaded .ea-type-image{position:static;bottom:0;right:0;margin:auto;text-align:center}[data-ea-style="stickybox"].loaded .ea-type-image .ea-stickybox-hide{display:none}}@media (min-width: 1301px){[data-ea-style="stickybox"].loaded .ea-type-image .ea-content{background:#dcdcdc}[data-ea-style="stickybox"].loaded.dark .ea-type-image .ea-content{background:#505050}}@media (min-width: 1301px) and (prefers-color-scheme: dark){[data-ea-style="stickybox"].loaded.adaptive .ea-type-image .ea-content{background:#505050}}
+</style><script src="./Welcome to DeepSpeech’s documentation! — Mozilla DeepSpeech 0.9.3 documentation_files/saved_resource" type="text/javascript" async=""></script><script type="text/javascript" async="" src="./Welcome to DeepSpeech’s documentation! — Mozilla DeepSpeech 0.9.3 documentation_files/MathJax.js.letöltés"></script><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover, .MJXp-munder {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > *, .MJXp-munder > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+
+<body class="wy-body-for-nav" data-new-gr-c-s-check-loaded="14.1057.0" data-gr-ext-installed=""><div id="MathJax_Message" style="display: none;"></div>
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="https://deepspeech.readthedocs.io/en/r0.9/#" class="icon icon-home"> Mozilla DeepSpeech
+          
+
+          
+          </a>
+
+          
+            
+            
+            
+              <div class="version">
+                r0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="https://deepspeech.readthedocs.io/en/r0.9/search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/USING.html"><span class="toctree-expand"></span>Using a Pre-trained Model</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/USING.html#cuda-dependency-inference">CUDA dependency (inference)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/USING.html#getting-the-pre-trained-model">Getting the pre-trained model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/USING.html#important-considerations-on-model-inputs">Important considerations on model inputs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/USING.html#model-compatibility">Model compatibility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/USING.html#using-the-python-package"><span class="toctree-expand"></span>Using the Python package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/USING.html#create-a-deepspeech-virtual-environment">Create a DeepSpeech virtual environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/USING.html#activating-the-environment">Activating the environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/USING.html#installing-deepspeech-python-bindings">Installing DeepSpeech Python bindings</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/USING.html#using-the-node-js-electron-js-package">Using the Node.JS / Electron.JS package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/USING.html#using-the-command-line-client">Using the command-line client</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/USING.html#installing-bindings-from-source">Installing bindings from source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/USING.html#dockerfile-for-building-from-source">Dockerfile for building from source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/USING.html#third-party-bindings">Third party bindings</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html"><span class="toctree-expand"></span>Training Your Own Model</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#prerequisites-for-training-a-model">Prerequisites for training a model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#getting-the-training-code">Getting the training code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#creating-a-virtual-environment">Creating a virtual environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#activating-the-environment">Activating the environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#installing-deepspeech-training-code-and-its-dependencies">Installing DeepSpeech Training Code and its dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#recommendations">Recommendations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#basic-dockerfile-for-training">Basic Dockerfile for training</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#common-voice-training-data">Common Voice training data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#training-a-model">Training a model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#training-with-automatic-mixed-precision">Training with automatic mixed precision</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#checkpointing">Checkpointing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#exporting-a-model-for-inference">Exporting a model for inference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#exporting-a-model-for-tflite">Exporting a model for TFLite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#making-a-mmap-able-model-for-inference"><span class="toctree-expand"></span>Making a mmap-able model for inference</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#continuing-training-from-a-release-model">Continuing training from a release model</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#fine-tuning-same-alphabet">Fine-Tuning (same alphabet)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#transfer-learning-new-alphabet">Transfer-Learning (new alphabet)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#utf-8-mode">UTF-8 mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#augmentation"><span class="toctree-expand"></span>Augmentation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#sample-domain-augmentations">Sample domain augmentations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#spectrogram-domain-augmentations">Spectrogram domain augmentations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#multi-domain-augmentations">Multi domain augmentations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#training-from-an-anaconda-or-miniconda-environment">Training from an Anaconda or miniconda environment</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/SUPPORTED_PLATFORMS.html"><span class="toctree-expand"></span>Supported platforms for inference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/SUPPORTED_PLATFORMS.html#linux-amd64-without-gpu">Linux / AMD64 without GPU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/SUPPORTED_PLATFORMS.html#linux-amd64-with-gpu">Linux / AMD64 with GPU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/SUPPORTED_PLATFORMS.html#linux-armv7">Linux / ARMv7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/SUPPORTED_PLATFORMS.html#linux-aarch64">Linux / Aarch64</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/SUPPORTED_PLATFORMS.html#android-armv7">Android / ARMv7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/SUPPORTED_PLATFORMS.html#android-aarch64">Android / Aarch64</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/SUPPORTED_PLATFORMS.html#macos-amd64">macOS / AMD64</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/SUPPORTED_PLATFORMS.html#windows-amd64-without-gpu">Windows / AMD64 without GPU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/SUPPORTED_PLATFORMS.html#windows-amd64-with-gpu">Windows / AMD64 with GPU</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/BUILDING.html"><span class="toctree-expand"></span>Building DeepSpeech Binaries</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/BUILDING.html#dependencies"><span class="toctree-expand"></span>Dependencies</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/BUILDING.html#checkout-source-code">Checkout source code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/BUILDING.html#bazel-download-install">Bazel: Download &amp; Install</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/BUILDING.html#tensorflow-configure-with-bazel">TensorFlow: Configure with Bazel</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/BUILDING.html#compile-deepspeech"><span class="toctree-expand"></span>Compile DeepSpeech</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/BUILDING.html#compile-libdeepspeech-so">Compile <code class="docutils literal notranslate"><span class="pre">libdeepspeech.so</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/BUILDING.html#compile-generate-scorer-package">Compile <code class="docutils literal notranslate"><span class="pre">generate_scorer_package</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/BUILDING.html#compile-language-bindings">Compile Language Bindings</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/BUILDING.html#installing-your-own-binaries"><span class="toctree-expand"></span>Installing your own Binaries</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/BUILDING.html#install-python-bindings">Install Python bindings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/BUILDING.html#install-nodejs-electronjs-bindings">Install NodeJS / ElectronJS bindings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/BUILDING.html#install-the-ctc-decoder-package">Install the CTC decoder package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/BUILDING.html#cross-building"><span class="toctree-expand"></span>Cross-building</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/BUILDING.html#rpi3-armv7-and-lepotato-arm64">RPi3 ARMv7 and LePotato ARM64</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/BUILDING.html#android-devices-support"><span class="toctree-expand"></span>Android devices support</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/BUILDING.html#using-the-library-from-android-project">Using the library from Android project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/BUILDING.html#building-libdeepspeech-so">Building <code class="docutils literal notranslate"><span class="pre">libdeepspeech.so</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/BUILDING.html#building-libdeepspeech-aar">Building <code class="docutils literal notranslate"><span class="pre">libdeepspeech.aar</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/BUILDING.html#building-c-deepspeech-binary">Building C++ <code class="docutils literal notranslate"><span class="pre">deepspeech</span></code> binary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/BUILDING.html#android-demo-apk">Android demo APK</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/BUILDING.html#running-deepspeech-via-adb">Running <code class="docutils literal notranslate"><span class="pre">deepspeech</span></code> via adb</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/BUILDING.html#delegation-api">Delegation API</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><span class="caption-text">Decoder and scorer</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Decoder.html"><span class="toctree-expand"></span>CTC beam search decoder</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Decoder.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Decoder.html#external-scorer">External scorer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Decoder.html#decoding-modes">Decoding modes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Decoder.html#default-mode-alphabet-based">Default mode (alphabet based)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Decoder.html#bytes-output-mode">Bytes output mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Decoder.html#implementation">Implementation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Scorer.html"><span class="toctree-expand"></span>External scorer scripts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Scorer.html#reproducing-our-external-scorer">Reproducing our external scorer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Scorer.html#building-your-own-scorer">Building your own scorer</a></li>
+</ul>
+</li>
+</ul>
+<p><span class="caption-text">Architecture and training</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/DeepSpeech.html">DeepSpeech Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Geometry.html"><span class="toctree-expand"></span>Geometric Constants</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Geometry.html#n-input">n_input</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Geometry.html#n-context">n_context</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Geometry.html#n-hidden-1-n-hidden-2-n-hidden-5">n_hidden_1, n_hidden_2, n_hidden_5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Geometry.html#n-cell-dim">n_cell_dim</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Geometry.html#n-hidden-3">n_hidden_3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Geometry.html#n-hidden-6">n_hidden_6</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/ParallelOptimization.html"><span class="toctree-expand"></span>Parallel Optimization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/ParallelOptimization.html#asynchronous-parallel-optimization">Asynchronous Parallel Optimization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/ParallelOptimization.html#synchronous-optimization">Synchronous Optimization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/ParallelOptimization.html#hybrid-parallel-optimization">Hybrid Parallel Optimization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/ParallelOptimization.html#adam-optimization">Adam Optimization</a></li>
+</ul>
+</li>
+</ul>
+<p><span class="caption-text">API Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Error-Codes.html">Error codes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/C-API.html"><span class="toctree-expand"></span>C API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Structs.html"><span class="toctree-expand"></span>Data structures</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Structs.html#metadata">Metadata</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Structs.html#candidatetranscript">CandidateTranscript</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Structs.html#tokenmetadata">TokenMetadata</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/DotNet-API.html"><span class="toctree-expand"></span>.NET Framework</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/DotNet-API.html#deepspeech-class">DeepSpeech Class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/DotNet-API.html#deepspeechstream-class">DeepSpeechStream Class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/DotNet-API.html#errorcodes">ErrorCodes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/DotNet-API.html#metadata">Metadata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/DotNet-API.html#candidatetranscript">CandidateTranscript</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/DotNet-API.html#tokenmetadata">TokenMetadata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/DotNet-API.html#deepspeech-interface">DeepSpeech Interface</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Java-API.html"><span class="toctree-expand"></span>Java</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Java-API.html#deepspeechmodel">DeepSpeechModel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Java-API.html#metadata">Metadata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Java-API.html#candidatetranscript">CandidateTranscript</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Java-API.html#tokenmetadata">TokenMetadata</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/NodeJS-API.html"><span class="toctree-expand"></span>JavaScript (NodeJS / ElectronJS)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/NodeJS-API.html#model">Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/NodeJS-API.html#stream">Stream</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/NodeJS-API.html#module-exported-methods">Module exported methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/NodeJS-API.html#metadata">Metadata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/NodeJS-API.html#candidatetranscript">CandidateTranscript</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/NodeJS-API.html#tokenmetadata">TokenMetadata</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Python-API.html"><span class="toctree-expand"></span>Python</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Python-API.html#model">Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Python-API.html#stream">Stream</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Python-API.html#metadata">Metadata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Python-API.html#candidatetranscript">CandidateTranscript</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Python-API.html#tokenmetadata">TokenMetadata</a></li>
+</ul>
+</li>
+</ul>
+<p><span class="caption-text">Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/C-Examples.html"><span class="toctree-expand"></span>C API Usage example</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/C-Examples.html#creating-a-model-instance-and-loading-model">Creating a model instance and loading model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/C-Examples.html#performing-inference">Performing inference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/C-Examples.html#full-source-code">Full source code</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/DotNet-Examples.html"><span class="toctree-expand"></span>.NET API Usage example</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/DotNet-Examples.html#creating-a-model-instance-and-loading-model">Creating a model instance and loading model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/DotNet-Examples.html#performing-inference">Performing inference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/DotNet-Examples.html#full-source-code">Full source code</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Java-Examples.html"><span class="toctree-expand"></span>Java API Usage example</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Java-Examples.html#creating-a-model-instance-and-loading-model">Creating a model instance and loading model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Java-Examples.html#performing-inference">Performing inference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Java-Examples.html#full-source-code">Full source code</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/NodeJS-Examples.html"><span class="toctree-expand"></span>JavaScript API Usage example</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/NodeJS-Examples.html#creating-a-model-instance-and-loading-model">Creating a model instance and loading model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/NodeJS-Examples.html#performing-inference">Performing inference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/NodeJS-Examples.html#full-source-code">Full source code</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Python-Examples.html"><span class="toctree-expand"></span>Python API Usage example</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Python-Examples.html#creating-a-model-instance-and-loading-model">Creating a model instance and loading model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Python-Examples.html#performing-inference">Performing inference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Python-Examples.html#full-source-code">Full source code</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Contributed-Examples.html">User contributed examples</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="https://deepspeech.readthedocs.io/en/r0.9/#">Mozilla DeepSpeech</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="https://deepspeech.readthedocs.io/en/r0.9/#">Docs</a> »</li>
+        
+      <li>Welcome to DeepSpeech’s documentation!</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/mozilla/DeepSpeech/blob/r0.9/doc/index.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="welcome-to-deepspeech-s-documentation">
+<h1>Welcome to DeepSpeech’s documentation!<a class="headerlink" href="https://deepspeech.readthedocs.io/en/r0.9/#welcome-to-deepspeech-s-documentation" title="Permalink to this headline">¶</a></h1>
+<p>DeepSpeech is an open source Speech-To-Text engine, using a model trained by machine learning techniques based on <a class="reference external" href="https://arxiv.org/abs/1412.5567">Baidu’s Deep Speech research paper</a>. Project DeepSpeech uses Google’s <a class="reference external" href="https://www.tensorflow.org/">TensorFlow</a> to make the implementation easier.</p>
+<p>To install and use DeepSpeech all you have to do is:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create and activate a virtualenv</span>
+virtualenv -p python3 <span class="nv">$HOME</span>/tmp/deepspeech-venv/
+<span class="nb">source</span> <span class="nv">$HOME</span>/tmp/deepspeech-venv/bin/activate
+
+<span class="c1"># Install DeepSpeech</span>
+pip3 install deepspeech
+
+<span class="c1"># Download pre-trained English model files</span>
+curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/deepspeech-0.9.3-models.pbmm
+curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/deepspeech-0.9.3-models.scorer
+
+<span class="c1"># Download example audio files</span>
+curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/audio-0.9.3.tar.gz
+tar xvf audio-0.9.3.tar.gz
+
+<span class="c1"># Transcribe an audio file</span>
+deepspeech --model deepspeech-0.9.3-models.pbmm --scorer deepspeech-0.9.3-models.scorer --audio audio/2830-3980-0043.wav
+</pre></div>
+</div>
+<p>A pre-trained English model is available for use and can be downloaded following the instructions in <a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/USING.html#usage-docs"><span class="std std-ref">the usage docs</span></a>. For the latest release, including pre-trained models and checkpoints, <a class="reference external" href="https://github.com/mozilla/DeepSpeech/releases/latest">see the GitHub releases page</a>.</p>
+<p>Quicker inference can be performed using a supported NVIDIA GPU on Linux. See the <a class="reference external" href="https://github.com/mozilla/DeepSpeech/releases/latest">release notes</a> to find which GPUs are supported. To run <code class="docutils literal notranslate"><span class="pre">deepspeech</span></code> on a GPU, install the GPU specific package:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create and activate a virtualenv</span>
+virtualenv -p python3 <span class="nv">$HOME</span>/tmp/deepspeech-gpu-venv/
+<span class="nb">source</span> <span class="nv">$HOME</span>/tmp/deepspeech-gpu-venv/bin/activate
+
+<span class="c1"># Install DeepSpeech CUDA enabled package</span>
+pip3 install deepspeech-gpu
+
+<span class="c1"># Transcribe an audio file.</span>
+deepspeech --model deepspeech-0.9.3-models.pbmm --scorer deepspeech-0.9.3-models.scorer --audio audio/2830-3980-0043.wav
+</pre></div>
+</div>
+<p>Please ensure you have the required <a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/USING.html#cuda-inference-deps"><span class="std std-ref">CUDA dependencies</span></a>.</p>
+<p>See the output of <code class="docutils literal notranslate"><span class="pre">deepspeech</span> <span class="pre">-h</span></code> for more information on the use of <code class="docutils literal notranslate"><span class="pre">deepspeech</span></code>. (If you experience problems running <code class="docutils literal notranslate"><span class="pre">deepspeech</span></code>, please check <a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/USING.html#runtime-deps"><span class="std std-ref">required runtime dependencies</span></a>).</p>
+<div class="toctree-wrapper compound">
+<p><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/USING.html">Using a Pre-trained Model</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/USING.html#cuda-dependency-inference">CUDA dependency (inference)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/USING.html#getting-the-pre-trained-model">Getting the pre-trained model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/USING.html#important-considerations-on-model-inputs">Important considerations on model inputs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/USING.html#model-compatibility">Model compatibility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/USING.html#using-the-python-package">Using the Python package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/USING.html#using-the-node-js-electron-js-package">Using the Node.JS / Electron.JS package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/USING.html#using-the-command-line-client">Using the command-line client</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/USING.html#installing-bindings-from-source">Installing bindings from source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/USING.html#dockerfile-for-building-from-source">Dockerfile for building from source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/USING.html#third-party-bindings">Third party bindings</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html">Training Your Own Model</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#prerequisites-for-training-a-model">Prerequisites for training a model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#getting-the-training-code">Getting the training code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#creating-a-virtual-environment">Creating a virtual environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#activating-the-environment">Activating the environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#installing-deepspeech-training-code-and-its-dependencies">Installing DeepSpeech Training Code and its dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#recommendations">Recommendations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#basic-dockerfile-for-training">Basic Dockerfile for training</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#common-voice-training-data">Common Voice training data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#training-a-model">Training a model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#training-with-automatic-mixed-precision">Training with automatic mixed precision</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#checkpointing">Checkpointing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#exporting-a-model-for-inference">Exporting a model for inference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#exporting-a-model-for-tflite">Exporting a model for TFLite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#making-a-mmap-able-model-for-inference">Making a mmap-able model for inference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#fine-tuning-same-alphabet">Fine-Tuning (same alphabet)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#transfer-learning-new-alphabet">Transfer-Learning (new alphabet)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#utf-8-mode">UTF-8 mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#augmentation">Augmentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/TRAINING.html#training-from-an-anaconda-or-miniconda-environment">Training from an Anaconda or miniconda environment</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/SUPPORTED_PLATFORMS.html">Supported platforms for inference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/SUPPORTED_PLATFORMS.html#linux-amd64-without-gpu">Linux / AMD64 without GPU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/SUPPORTED_PLATFORMS.html#linux-amd64-with-gpu">Linux / AMD64 with GPU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/SUPPORTED_PLATFORMS.html#linux-armv7">Linux / ARMv7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/SUPPORTED_PLATFORMS.html#linux-aarch64">Linux / Aarch64</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/SUPPORTED_PLATFORMS.html#android-armv7">Android / ARMv7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/SUPPORTED_PLATFORMS.html#android-aarch64">Android / Aarch64</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/SUPPORTED_PLATFORMS.html#macos-amd64">macOS / AMD64</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/SUPPORTED_PLATFORMS.html#windows-amd64-without-gpu">Windows / AMD64 without GPU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/SUPPORTED_PLATFORMS.html#windows-amd64-with-gpu">Windows / AMD64 with GPU</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/BUILDING.html">Building DeepSpeech Binaries</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/BUILDING.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/BUILDING.html#compile-deepspeech">Compile DeepSpeech</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/BUILDING.html#installing-your-own-binaries">Installing your own Binaries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/BUILDING.html#cross-building">Cross-building</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/BUILDING.html#android-devices-support">Android devices support</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="contact-getting-help">
+<span id="support"></span><h1>Contact/Getting Help<a class="headerlink" href="https://deepspeech.readthedocs.io/en/r0.9/#contact-getting-help" title="Permalink to this headline">¶</a></h1>
+<p>There are several ways to contact us or to get help:</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://discourse.mozilla.org/c/deep-speech">Discourse Forums</a> - The <a class="reference external" href="https://discourse.mozilla.org/c/deep-speech">Deep Speech category on Discourse</a> is the first place to look. Search for keywords related to your question or problem to see if someone else has run into it already. If you can’t find anything relevant there, search on our <a class="reference external" href="https://github.com/mozilla/deepspeech/issues">issue tracker</a> to see if there is an existing issue about your problem.</p></li>
+<li><p><a class="reference external" href="https://chat.mozilla.org/#/room/#machinelearning:mozilla.org">Matrix chat</a> - If your question is not addressed by either the <a class="reference external" href="https://github.com/mozilla/DeepSpeech/wiki#frequently-asked-questions">FAQ</a> or <a class="reference external" href="https://discourse.mozilla.org/c/deep-speech">Discourse Forums</a>, you can contact us on the <code class="docutils literal notranslate"><span class="pre">#machinelearning</span></code> channel on <a class="reference external" href="https://chat.mozilla.org/#/room/#machinelearning:mozilla.org">Mozilla Matrix</a>; people there can try to answer/help</p></li>
+<li><p><a class="reference external" href="https://github.com/mozilla/deepspeech/issues">Create a new issue</a> - Finally, if you have a bug report or a feature request that isn’t already covered by an existing issue, please open an issue in our repo and fill the appropriate information on your hardware and software setup.</p></li>
+</ol>
+<div class="toctree-wrapper compound">
+<p><span class="caption-text">Decoder and scorer</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Decoder.html">CTC beam search decoder</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Decoder.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Decoder.html#external-scorer">External scorer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Decoder.html#decoding-modes">Decoding modes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Decoder.html#default-mode-alphabet-based">Default mode (alphabet based)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Decoder.html#bytes-output-mode">Bytes output mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Decoder.html#implementation">Implementation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Scorer.html">External scorer scripts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Scorer.html#reproducing-our-external-scorer">Reproducing our external scorer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Scorer.html#building-your-own-scorer">Building your own scorer</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p><span class="caption-text">Architecture and training</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/DeepSpeech.html">DeepSpeech Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Geometry.html">Geometric Constants</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Geometry.html#n-input">n_input</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Geometry.html#n-context">n_context</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Geometry.html#n-hidden-1-n-hidden-2-n-hidden-5">n_hidden_1, n_hidden_2, n_hidden_5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Geometry.html#n-cell-dim">n_cell_dim</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Geometry.html#n-hidden-3">n_hidden_3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Geometry.html#n-hidden-6">n_hidden_6</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/ParallelOptimization.html">Parallel Optimization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/ParallelOptimization.html#asynchronous-parallel-optimization">Asynchronous Parallel Optimization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/ParallelOptimization.html#synchronous-optimization">Synchronous Optimization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/ParallelOptimization.html#hybrid-parallel-optimization">Hybrid Parallel Optimization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/ParallelOptimization.html#adam-optimization">Adam Optimization</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p><span class="caption-text">API Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Error-Codes.html">Error codes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/C-API.html">C API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Structs.html">Data structures</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Structs.html#metadata">Metadata</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Structs.html#candidatetranscript">CandidateTranscript</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Structs.html#tokenmetadata">TokenMetadata</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/DotNet-API.html">.NET Framework</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/DotNet-API.html#deepspeech-class">DeepSpeech Class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/DotNet-API.html#deepspeechstream-class">DeepSpeechStream Class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/DotNet-API.html#errorcodes">ErrorCodes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/DotNet-API.html#metadata">Metadata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/DotNet-API.html#candidatetranscript">CandidateTranscript</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/DotNet-API.html#tokenmetadata">TokenMetadata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/DotNet-API.html#deepspeech-interface">DeepSpeech Interface</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Java-API.html">Java</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Java-API.html#deepspeechmodel">DeepSpeechModel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Java-API.html#metadata">Metadata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Java-API.html#candidatetranscript">CandidateTranscript</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Java-API.html#tokenmetadata">TokenMetadata</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/NodeJS-API.html">JavaScript (NodeJS / ElectronJS)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/NodeJS-API.html#model">Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/NodeJS-API.html#stream">Stream</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/NodeJS-API.html#module-exported-methods">Module exported methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/NodeJS-API.html#metadata">Metadata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/NodeJS-API.html#candidatetranscript">CandidateTranscript</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/NodeJS-API.html#tokenmetadata">TokenMetadata</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Python-API.html">Python</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Python-API.html#model">Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Python-API.html#stream">Stream</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Python-API.html#metadata">Metadata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Python-API.html#candidatetranscript">CandidateTranscript</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Python-API.html#tokenmetadata">TokenMetadata</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p><span class="caption-text">Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/C-Examples.html">C API Usage example</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/C-Examples.html#creating-a-model-instance-and-loading-model">Creating a model instance and loading model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/C-Examples.html#performing-inference">Performing inference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/C-Examples.html#full-source-code">Full source code</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/DotNet-Examples.html">.NET API Usage example</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/DotNet-Examples.html#creating-a-model-instance-and-loading-model">Creating a model instance and loading model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/DotNet-Examples.html#performing-inference">Performing inference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/DotNet-Examples.html#full-source-code">Full source code</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Java-Examples.html">Java API Usage example</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Java-Examples.html#creating-a-model-instance-and-loading-model">Creating a model instance and loading model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Java-Examples.html#performing-inference">Performing inference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Java-Examples.html#full-source-code">Full source code</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/NodeJS-Examples.html">JavaScript API Usage example</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/NodeJS-Examples.html#creating-a-model-instance-and-loading-model">Creating a model instance and loading model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/NodeJS-Examples.html#performing-inference">Performing inference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/NodeJS-Examples.html#full-source-code">Full source code</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Python-Examples.html">Python API Usage example</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Python-Examples.html#creating-a-model-instance-and-loading-model">Creating a model instance and loading model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Python-Examples.html#performing-inference">Performing inference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Python-Examples.html#full-source-code">Full source code</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/Contributed-Examples.html">User contributed examples</a></li>
+</ul>
+</div>
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="https://deepspeech.readthedocs.io/en/r0.9/#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="https://deepspeech.readthedocs.io/en/r0.9/search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="https://deepspeech.readthedocs.io/en/r0.9/USING.html" class="btn btn-neutral float-right" title="Using a Pre-trained Model" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr><div><div id="rtd-sidebar" data-ea-publisher="readthedocs" data-ea-type="readthedocs-sidebar" data-ea-manual="true" class="ethical-rtd loaded" data-ea-keywords="python|readthedocs-project-505673|readthedocs-project-deepspeech|recognition|speech" data-ea-campaign-types="community|house|paid"><div class="ethical-sidebar"><div class="ethical-content"><a href="https://server.ethicalads.io/proxy/click/2633/5766bab6-616e-4691-9828-264c46b23abe/" rel="nofollow noopener" target="_blank" class="ethical-image-link"><img src="./Welcome to DeepSpeech’s documentation! — Mozilla DeepSpeech 0.9.3 documentation_files/Ethical_Ads_Q2-2022.png" alt="Sponsored: Buildkite"></a><div class="ethical-text"><a href="https://server.ethicalads.io/proxy/click/2633/5766bab6-616e-4691-9828-264c46b23abe/" rel="nofollow noopener" target="_blank"><strong>Fast, Secure, Scalable CI/CD </strong><span>Speed up your builds with Buildkite’s new free plan</span><strong> Sign up</strong></a></div></div><div class="ethical-callout"><small><em><a rel="nofollow noopener" target="_blank" href="https://ethicalads.io/?ref=rtd-sidebar">Ad by EthicalAds</a><span> &nbsp; · &nbsp; </span><a rel="nofollow noopener" target="_blank" href="https://www.ethicalads.io/publishers/?ref=rtd-sidebar-join">Monetize your site</a></em></small></div></div></div></div>
+
+  <div role="contentinfo">
+    <p>
+        © Copyright 2016-2020 Mozilla Corporation, 2020 DeepSpeech authors
+      
+        <span class="commit">
+          Revision <code>bfccca32</code>.
+        </span>
+      
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org/">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Read the Docs</span>
+      v: r0.9
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions"><!-- Inserted RTD Footer -->
+
+<div class="injected">
+
+  
+
+      
+      
+      
+      <dl>
+        <dt>Versions</dt>
+        
+        <dd>
+          <a href="https://deepspeech.readthedocs.io/en/master/">master</a>
+        </dd>
+        
+        <dd>
+          <a href="https://deepspeech.readthedocs.io/en/latest/">latest</a>
+        </dd>
+        
+        <dd>
+          <a href="https://deepspeech.readthedocs.io/en/v0.9.3/">v0.9.3</a>
+        </dd>
+        
+        <dd>
+          <a href="https://deepspeech.readthedocs.io/en/v0.8.2/">v0.8.2</a>
+        </dd>
+        
+        <dd>
+          <a href="https://deepspeech.readthedocs.io/en/v0.7.4/">v0.7.4</a>
+        </dd>
+        
+        <dd>
+          <a href="https://deepspeech.readthedocs.io/en/v0.6.1/">v0.6.1</a>
+        </dd>
+        
+        <dd class="rtd-current-item">
+          <a href="https://deepspeech.readthedocs.io/en/r0.9/">r0.9</a>
+        </dd>
+        
+        <dd>
+          <a href="https://deepspeech.readthedocs.io/en/r0.8/">r0.8</a>
+        </dd>
+        
+      </dl>
+      
+      
+
+      
+      
+      
+
+      
+      <dl>
+        
+        <!-- These are kept as relative links for internal installs that are http -->
+        <dt>On Read the Docs</dt>
+        <dd>
+          <a href="https://readthedocs.org/projects/deepspeech/">Project Home</a>
+        </dd>
+        <dd>
+          <a href="https://readthedocs.org/projects/deepspeech/builds/">Builds</a>
+        </dd>
+        <dd>
+          <a href="https://readthedocs.org/projects/deepspeech/downloads/">Downloads</a>
+        </dd>
+      </dl>
+      
+
+      
+
+      
+      <dl>
+        <dt>On GitHub</dt>
+        <dd>
+          <a href="https://github.com/mozilla/DeepSpeech/blob/r0.9/doc/index.rst">View</a>
+        </dd>
+        
+        <dd>
+          <a href="https://github.com/mozilla/DeepSpeech/edit/r0.9/doc/index.rst">Edit</a>
+        </dd>
+        
+      </dl>
+      
+      
+
+      
+      <dl>
+        <dt>Search</dt>
+        <dd>
+          <div style="padding: 6px;">
+            
+            <form id="flyout-search-form" class="wy-form" target="_blank" action="https://readthedocs.org/projects/deepspeech/search/" method="get">
+              <input type="text" name="q" aria-label="Search docs" placeholder="Search docs">
+              </form>
+          </div>
+        </dd>
+      </dl>
+      
+
+      <hr>
+
+      
+        <small>
+          <span>Hosted by <a href="https://readthedocs.org/">Read the Docs</a></span>
+          <span> · </span>
+          <a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+        </small>
+      
+
+      
+
+</div>
+</div>
+  </div>
+
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+   
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
